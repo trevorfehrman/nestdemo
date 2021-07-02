@@ -15,10 +15,6 @@ import { TasksModule } from './tasks/tasks.module';
       useFactory: async (configurationService: ConfigService) => {
         // const isProduction = configurationService.get('STAGE') === 'prod',
         return {
-          // ssl: isProduction,
-          // extra: {
-          //   ssl: isProduction ? 
-          // }
           type: 'postgres',
           autoLoadEntities: true,
           synchronize: true,
